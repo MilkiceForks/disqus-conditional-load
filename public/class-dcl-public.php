@@ -121,6 +121,11 @@ class DCL_Public {
 		// Custom vars for dcl.
 		$custom_vars = array(
 			'dcl_progress_text' => $dcl_helper->get_option( 'dcl_message', false, __( 'Loading Comments....', 'disqus-conditional-load' ) ),
+                        'disqusProxyURL' => $dcl_helper->get_option( 'djs_proxy_url', false, '' ),
+                        'disqusAPIKey' => $dcl_helper->get_option( 'djs_api_key', false, '' ),
+                        'disqusModerator' => $dcl_helper->get_option( 'djs_admin', false, '' ),
+                        'disqusModLabel' => $dcl_helper->get_option( 'djs_admin_label', false, '' ),
+                        'disqusSitename' => $dcl_helper->get_option( 'djs_site_name', false, '' )
 		);
 
 		$custom_vars = apply_filters( 'dcl_custom_vars', $custom_vars );
