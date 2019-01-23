@@ -1,0 +1,12 @@
+assets/css/
+assets/js/
+assets/img/
+includes/
+admin/
+public/
+vendor/
+disqus-conditional-load.php
+index.php
+LICENSE
+readme.txt
+uninstall.php
