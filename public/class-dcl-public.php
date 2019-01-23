@@ -408,10 +408,8 @@ class DCL_Public {
 		if ( $width > 0 && in_array( $width_type, array( '%', 'px' ), true ) ) {
 			$custom_css .= "#disqus_thread{width: {$width}{$width_type};margin: 0 auto;}";
 		}
-		// Add button style if required.
-		if ( $load_method === 'click' ) {
-			$custom_css .= '#dcl_btn_container{text-align: center;margin-top:10px;margin-bottom:10px}';
-		}
+		// Always add button style
+		$custom_css .= '#dcl_btn_container{text-align: center;margin-top:10px;margin-bottom:10px}';
 
 		// Make sure we need to add inline style.
 		if ( ! empty( $custom_css ) ) {
