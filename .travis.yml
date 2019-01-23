@@ -1,13 +1,16 @@
 language: node_js
 node_js:
 - '10'
-sudo: false
+sudo: true
 branches:
   only:
   - dev
   - master
 install:
 - npm install
+- rvm install 2.6.0
+- gem install sass
+- npm install --save node-sass grunt-sass
 script:
 - npm run compile
 - zip -r "disqus-conditional-load-M-$TRAVIS_TAG.zip" -@ < filelist.txt
