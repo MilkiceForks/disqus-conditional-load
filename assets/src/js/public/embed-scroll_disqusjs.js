@@ -43,19 +43,19 @@ var retry_loading_disqusjs = function() {
     document.getElementById( 'dcl_btn_container' ).innerHTML = dclCustomVars.dcl_progress_text;
     disqusjs_loading=false;
     disqus_comments();
-}
+};
 
 var timeout_detect = function() {
     if(typeof DisqusJS !== 'function' && document.getElementById( 'dcl_btn_container' ) !== null){
         document.getElementById( 'dcl_btn_container' ).innerHTML = '加载失败 点击 <a id="dcl_reload_disqusjs" style="cursor: pointer">此处</a> 重载';
         document.getElementById( 'dcl_reload_disqusjs' ).addEventListener('click', retry_loading_disqusjs);
     }
-}
+};
 
 var load_disqusjs = function () {
     if ( !disqus_loaded ) {
         disqus_loaded = true;
-	    var dsqjs = new DisqusJS({
+        var dsqjs = new DisqusJS({
             shortname: countVars.disqusShortname,
             siteName: dclCustomVars.disqusSitename,
             identifier: embedVars.disqusIdentifier,
@@ -65,7 +65,7 @@ var load_disqusjs = function () {
             admin: dclCustomVars.disqusModerator,
             adminLabel: dclCustomVars.disqusModLabel
         });
-	    if ( document.getElementById( 'dcl_btn_container' ) !== null ) {
+        if ( document.getElementById( 'dcl_btn_container' ) !== null ) {
             document.getElementById( 'dcl_btn_container' ).style.display = 'none';
         }
     }
@@ -73,7 +73,7 @@ var load_disqusjs = function () {
 
 var disqus_comments = function () {
     if ( !disqusjs_loading ) {
-	    disqusjs_loading = true;
+        disqusjs_loading = true;
         var disqusjs = document.createElement( 'script' );
         disqusjs.type = 'text/javascript';
         disqusjs.async = true;
