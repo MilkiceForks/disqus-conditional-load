@@ -8,7 +8,6 @@ branches:
   - master
 install:
 - npm install
-- rvm install 2.6.0
 - gem install sass
 - npm install --save node-sass grunt-sass
 script:
