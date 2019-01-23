@@ -100,7 +100,7 @@ djs_style.href = 'https://cdn.jsdelivr.net/npm/disqusjs@1.1/dist/disqusjs.css';
 
 var tmp_text = document.createTextNode( dclCustomVars.dcl_progress_text ),
     tmp_div = document.createElement( 'div' );
-tmp_div.setAttribute( 'id', 'dcl_btn_container' );
+tmp_div.setAttribute('id', 'dcl_btn_container');
 tmp_div.appendChild(tmp_text);
 
 if ( current_url.indexOf( '#comment' ) != -1 ) {
