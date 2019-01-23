@@ -86,7 +86,7 @@ class DCL_Helper {
 		 *
 		 * @since 11.0.0
 		 */
-		$this->methods = apply_filters( 'dcl_lazy_load_methods', array( 'scroll', 'click' ) );
+		$this->methods = apply_filters( 'dcl_lazy_load_methods', array( 'scroll', 'click', 'scroll_disqusjs' ) );
 	}
 
 	/**

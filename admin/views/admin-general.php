@@ -31,6 +31,7 @@ defined( 'ABSPATH' ) || die( 'K. Bye.' );
 						<option value="click" <?php selected( $options['dcl_type'], 'click' ); ?>><?php esc_html_e( 'On Click', 'disqus-conditional-load' ); ?></option>
 						<option value="scroll" <?php selected( $options['dcl_type'], 'scroll' ); ?>><?php esc_html_e( 'On Scroll', 'disqus-conditional-load' ); ?></option>
 						<option value="normal" <?php selected( $options['dcl_type'], 'normal' ); ?>><?php esc_html_e( 'Normal (no lazy load)', 'disqus-conditional-load' ); ?></option>
+						<option value="scroll_disqusjs" <?php selected( $options['dcl_type'], 'scroll_disqusjs' ); ?>><?php esc_html_e( 'On Scroll, load with DisqusJS', 'disqus-conditional-load' ); ?></option> 
 						<option disabled="disabled"><?php esc_html_e( 'On Scroll Start (Pro only)', 'disqus-conditional-load' ); ?></option>
 					</select>
 					<p class="description">
@@ -98,6 +99,61 @@ defined( 'ABSPATH' ) || die( 'K. Bye.' );
 					</p>
 				</td>
 			</tr>
+			<tr>
+				<th>
+					<?php esc_html_e( 'Site Name', 'disqus-conditional-load' ); ?>
+				</th>
+				<td>
+					<input type="text" name="dcl_gnrl_options[djs_site_name]" value="<?php echo $options['djs_site_name']; ?>" size="20">
+					<p class="description thin">
+						<?php esc_html_e( 'Site name displayed when proxy mode is enabled (Only for DisqusJS)', 'disqus-conditional-load' ); ?>
+					</p>
+				</td>
+			</tr>
+			<tr>
+                                <th>
+                                        <?php esc_html_e( 'Disqus Proxy URL', 'disqus-conditional-load' ); ?>
+                                </th>
+                                <td>
+                                        <input type="text" name="dcl_gnrl_options[djs_proxy_url]" value="<?php echo $options['djs_proxy_url']; ?>" size="20">
+                                        <p class="description thin">
+                                                <?php esc_html_e( 'Reverse proxy used to communicate with Disqus API when proxy mode is enabled (Only for DisqusJS)', 'disqus-conditional-load' ); ?>
+                                        </p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <th>
+                                        <?php esc_html_e( 'Disqus API Key', 'disqus-conditional-load' ); ?>
+                                </th>
+                                <td>
+                                        <input type="text" name="dcl_gnrl_options[djs_api_key]" value="<?php echo $options['djs_api_key']; ?>" size="20">
+                                        <p class="description thin">
+                                                <?php esc_html_e( 'Disqus public API key (Only for DisqusJS)', 'disqus-conditional-load' ); ?>
+                                        </p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <th>
+                                        <?php esc_html_e( 'Disqus Admin Username', 'disqus-conditional-load' ); ?>
+                                </th>
+                                <td>
+                                        <input type="text" name="dcl_gnrl_options[djs_admin]" value="<?php echo $options['djs_admin']; ?>" size="20">
+                                        <p class="description thin">
+                                                <?php esc_html_e( 'Username for Disqus Admin (Only for DisqusJS)', 'disqus-conditional-load' ); ?>
+                                        </p>
+                                </td>
+                        </tr>
+			<tr>
+                                <th>
+                                        <?php esc_html_e( 'Disqus Admin Label', 'disqus-conditional-load' ); ?>
+                                </th>
+                                <td>
+                                        <input type="text" name="dcl_gnrl_options[djs_admin_label]" value="<?php echo $options['djs_admin_label']; ?>" size="20">
+                                        <p class="description thin">
+                                                <?php esc_html_e( 'Label for Disqus Admin (Only for DisqusJS)', 'disqus-conditional-load' ); ?>
+                                        </p>
+                                </td>
+                        </tr>
 			<tr>
 				<th>
 					<?php esc_html_e( 'Disable on CPTs', 'disqus-conditional-load' ); ?>

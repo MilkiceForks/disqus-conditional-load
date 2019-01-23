@@ -43,6 +43,11 @@ class DCL_Activator_Deactivator {
 			'dcl_caching'        => 0,
 			'dcl_cpt_exclude'    => '',
 			'dcl_cfasync'        => 0,
+			'djs_site_name'      => '',
+			'djs_proxy_url'      => '',
+			'djs_api_key'        => '',
+			'djs_admin'          => '',
+			'djs_admin_label'    => ''
 		);
 
 		// Get existing options if exists.

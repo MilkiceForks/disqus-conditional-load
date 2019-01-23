@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- '10'
+sudo: true
+branches:
+  only:
+  - dev
+  - master
+install:
+- npm install
+- gem install sass
+- npm install --save node-sass grunt-sass
+script:
+- npm run compile
+- zip -r "disqus-conditional-load-M-$TRAVIS_TAG.zip" -@ < filelist.txt
+deploy:
+  provider: releases
+  api_key:
+    secure: "TVdGKXronXnLrnu8iSnoG8tnSgsBYBz58dN6gxglUTAIP7ZiMJqg69CBVMGGBwLKHzfn9MIi/S343zsB/OB/PQxpNSl1pEO1fqDkZHnhiju9cKNYyY8z1ZqmGvR8lbJrJ8k8SPPPy7K2+Tn+ncYV0y37xr8DrozGUNaPCHhMQREV8ep/MzySxY6sRFwVWWZG01Ud/ORPQ+VTCxQj+6xcXnDPvdWaaoziRl8toKnHCKNXxoqbnjnrDIIkWQlXCI7uq3+WiTiQx/DszDKzPzIiFo3TKoA/LRY3JI33+Zpcmw0ZNHQeFKe3fPXgRtW6aMUl5xRu2Z2r3FU/rVFnkh+0hvQdcpSgz706DJsrRdhZuDiCcoyhGZT6ycEHsCPHYyDEPtqLGlrTzXgFn+OZh8Hm3TUL673CRBairDFN15MONLKRY+BJ2HxKzr5tRilQebNUV+udsPL1fzoYKzkDpRLqBOtOW3bvekqxf1FedbhACeAqnRSXR29H8NLBgluT7vL54jCgPNivo5UgQd6Upwe0ff9ShT1psdE504tkaAZCP8J9D12hmisz2oFegkcJMdGC69RdeTVfVDJT4gFdxwmpTKxqItXWIrqHOa505OKyHca7dIZCaNAHqTiASdZRx2Jd1o9DQ5kdyId4xCNTLkqECFcFr7sOUI1WW/iWVuJGf88="
+  file: disqus-conditional-load-M-$TRAVIS_TAG.zip
+  skip_cleanup: true
+  on:
+    tags: true
