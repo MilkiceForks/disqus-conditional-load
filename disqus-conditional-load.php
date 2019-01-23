@@ -1,17 +1,18 @@
 <?php
 /**
- * Plugin Name:     Disqus Conditional Load
- * Plugin URI:      https://dclwp.com
- * Description:     Disqus commenting system for WordPress with advanced features like like <strong>lazy load, shortcode</strong> etc.
- * Version:         11.0.0
- * Author:          Joel James
- * Author URI:      https://duckdev.com/
- * Donate link:     https://paypal.me/JoelCJ
- * License:         GPL-2.0+
- * License URI:     http://www.gnu.org/licenses/gpl-3.0.txt
- * Text Domain:     disqus-conditional-load
- * Domain Path:     /languages
- *
+ * Plugin Name:        Disqus Conditional Load
+ * Plugin URI:         https://dclwp.com
+ * Description:        Disqus commenting system for WordPress with advanced features like like <strong>lazy load, shortcode</strong> etc.
+ * Version:            11.0.0.7
+ * Author:             Joel James
+ * Author URI:         https://duckdev.com/
+ * Donate link:        https://paypal.me/JoelCJ
+ * License:            GPL-2.0+
+ * License URI:        http://www.gnu.org/licenses/gpl-3.0.txt
+ * Text Domain:        disqus-conditional-load
+ * Domain Path:        /languages
+ * GitHub Plugin URI:  https://github.com/MilkiceForks/disqus-conditional-load
+ * 
  * Disqus Conditional Load is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 2 of the License, or
