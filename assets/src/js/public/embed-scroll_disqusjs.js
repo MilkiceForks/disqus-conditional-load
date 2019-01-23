@@ -53,7 +53,7 @@ var timeout_detect = function() {
 };
 
 var load_disqusjs = function () {
-    if ( !disqus_loaded ) {
+    if (!disqus_loaded) {
         disqus_loaded = true;
         var dsqjs = new DisqusJS({
             shortname: countVars.disqusShortname,
@@ -72,7 +72,7 @@ var load_disqusjs = function () {
 };
 
 var disqus_comments = function () {
-    if ( !disqusjs_loading ) {
+    if (!disqusjs_loading) {
         disqusjs_loading = true;
         var disqusjs = document.createElement( 'script' );
         disqusjs.type = 'text/javascript';
