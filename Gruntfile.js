@@ -113,7 +113,8 @@ module.exports = function ( grunt ) {
                     'assets/js/public/embed-count.min.js': 'assets/src/js/public/embed-count.js',
                     'assets/js/public/embed-count-click.min.js': 'assets/src/js/public/embed-count-click.js',
                     'assets/js/public/embed-count-scroll.min.js': 'assets/src/js/public/embed-count-scroll.js',
-                    'assets/js/public/embed-scroll.min.js': 'assets/src/js/public/embed-scroll.js'
+                    'assets/js/public/embed-scroll.min.js': 'assets/src/js/public/embed-scroll.js',
+                    'assets/js/public/embed-scroll_disqusjs.min.js': 'assets/src/js/public/embed-scroll_disqusjs.js'
                 }
             }
         },
