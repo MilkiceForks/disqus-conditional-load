@@ -80,7 +80,7 @@ var disqus_comments = function () {
         disqusjs.src = "https://cdn.jsdelivr.net/npm/disqusjs@1.1.0/dist/disqus.js";
         disqusjs.onload = load_disqusjs;
         document.getElementById('disqus_thread').appendChild(disqusjs);
-        setTimeout(timeout_detect, 5000);
+        setTimeout(timeout_detect, 4000);
     }
 };
 
