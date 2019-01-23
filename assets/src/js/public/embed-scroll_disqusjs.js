@@ -102,6 +102,7 @@ var tmp_text = document.createTextNode( dclCustomVars.dcl_progress_text ),
     tmp_div = document.createElement( 'div' );
 tmp_div.setAttribute('id', 'dcl_btn_container');
 tmp_div.appendChild(tmp_text);
+disqus_div.appendChild(tmp_div);
 
 if ( current_url.indexOf( '#comment' ) != -1 ) {
     // Load directly if trying to scroll to a comment.
