@@ -25,7 +25,7 @@ var disqus_config = function () {
     this.sso = dsqConfig.sso;
     this.language = dsqConfig.language;
 
-    if ( disqus_config_custom ) {
+    if (disqus_config_custom) {
         disqus_config_custom.call( this );
     }
 };
